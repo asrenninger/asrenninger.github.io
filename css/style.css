@@ -15,13 +15,13 @@ h2 {
 
 .topbar {
     position: absolute;
-    left: 0%;
+    left: 0;
     width: 100%;
-    top: 0%;
+    top: 0;
     height: 20%;
     overflow-y: hidden;
-    padding-top: 0%;
-    padding-left: 5%;
+    padding-top: 0;
+    padding-left: 20px;
     /*
     background-color: #ffffff;
     opacity: 0.5;
@@ -31,13 +31,13 @@ h2 {
 
 .bottombar {
     position: absolute;
-    left: 0%;
+    left: 0;
     width: 100%;
-    top: 80%;
+    bottom: 0;
     height: 20%;
     overflow-y: hidden;
-    padding-left: 5%;
-    padding-bottom: 1%;
+    padding-left: 20px;
+    padding-bottom: 1px;
     /*
     background-color: #ffffff;
     opacity: 0.5;
