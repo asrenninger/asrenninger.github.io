@@ -8,6 +8,50 @@ p.main {
   font-size: 24px;
 }
 
+h2 {
+	font-weight: bold;
+  color: #ffffff;
+}
+
+.topbar {
+    position: absolute;
+    left: 0%;
+    width: 100%;
+    top: 0%;
+    height: 20%;
+    overflow-y: auto;
+    padding-top: 5px;
+    padding-left: 20px;
+    padding-bottom: 5px;
+    /*
+    background-color: #ffffff;
+    opacity: 0.5;
+    */
+    text-align: left;
+}
+
+.bottombar {
+    position: absolute;
+    left: 0%;
+    width: 100%;
+    top: 80%;
+    height: 20%;
+    overflow-y: auto;
+    padding-top: 5px;
+    padding-left: 20px;
+    padding-bottom: 5px;
+    /*
+    background-color: #ffffff;
+    opacity: 0.5;
+    */
+    text-align: left;
+}
+
+.text {
+  font-weight: bold;
+  color: #ffffff;
+}
+
 /* quick grid */
 .container {
   width: 93%;
