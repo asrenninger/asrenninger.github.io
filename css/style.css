@@ -19,7 +19,7 @@ h2 {
     width: 100%;
     top: 0%;
     height: 20%;
-    overflow-y: auto;
+    overflow-y: hidden;
     padding-top: 1%;
     padding-left: 5%;
     /*
@@ -35,7 +35,7 @@ h2 {
     width: 100%;
     top: 80%;
     height: 20%;
-    overflow-y: auto;
+    overflow-y: hidden;
     padding-left: 5%;
     padding-bottom: 1%;
     /*
