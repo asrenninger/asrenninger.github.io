@@ -45,6 +45,22 @@ h2 {
     text-align: left;
 }
 
+.sidebar {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    bottom: 0;
+    height: 20%;
+    overflow-y: hidden;
+    padding-left: 20px;
+    padding-bottom: 1px;
+    /*
+    background-color: #ffffff;
+    opacity: 0.5;
+    */
+    text-align: right;
+}
+
 .text {
   font-weight: bold;
   color: #ffffff;
