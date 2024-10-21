@@ -9,14 +9,34 @@
 
     <link rel="stylesheet" href="css/style.css" />
     <link rel="icon" type="image/png" href="https://raw.githubusercontent.com/asrenninger/asrenninger.github.io/master/images/fav.png" />
-
-
   </head>
   <body>
-
+    <div class="title">
+        <div class="top"><h1 style="margin-top: 0%; margin-bottom: 5%;">Andrew Renninger</h1></div>
+        <div class="bottom"><h4 style="margin-top: 0%; margin-bottom: 5%;">Urban Science + Human Behavior</h4></div>
+    </div>
+    <div class="hero">
+        <div class="animation-wrapper">
+            <div class="animation-label">Mobility Networks</div>
+            <div class="animation">
+                <canvas id="networkCanvas"></canvas>
+            </div>
+        </div>
+        <div class="animation-wrapper">
+            <div class="animation-label">Urban Simulation</div>
+            <div class="animation">
+                <canvas id="gravityCanvas"></canvas>
+            </div>
+        </div>
+        <div class="animation-wrapper">
+            <div class="animation-label">Earth Observation</div>
+            <div class="animation">
+              <div id="globeCanvas"></div>
+          </div>
+        </div>
+    </div>
+    <div class="white-section">
     <div class="container">
-      <h1><a href="https://vestride.github.io/Shuffle/" target="_blank" rel="noopener"></a>Andrew Renninger</h1>
-      <p>spatial + social science</p>
       <div class="js-grid my-shuffle">
         <figure class="js-item column">
           <a href="https://asrenninger.users.earthengine.app/view/dimensionsofdevelopment" target="_blank">
@@ -25,7 +45,7 @@
           </div>
           <div class="topbar">
             <svg height="50" width="auto">
-              <text x="0" y="30" fill="white" font-weight="bold">Indicators of Development</text>
+              <text x="0" y="30" fill="white" font-size="1vw" font-weight="bold">Indicators of Development</text>
             </svg>
           </div>
           </a>
@@ -42,7 +62,7 @@
           </div>
           <div class="topbar">
             <svg height="50" width="auto">
-              <text x="0" y="30" fill="white" font-weight="bold">Sensing Impervious Surface</text>
+              <text x="0" y="30" fill="white" font-size="1vw" font-weight="bold">Sensing Impervious Surface</text>
             </svg>
           </div>
           </a>
@@ -59,7 +79,7 @@
           </div>
           <div class="topbar">
             <svg height="50" width="auto">
-              <text x="0" y="30" fill="white" font-weight="bold">Mobility Patterns</text>
+              <text x="0" y="30" fill="white" font-size="1vw" font-weight="bold">Mobility Patterns</text>
             </svg>
           </div>
         </a>
@@ -70,28 +90,26 @@
           </div>
         </figure>
         <figure class="js-item column">
-          <a href="https://github.com/asrenninger/twentysixteen" target="_blank">
           <div class="aspect aspect--16x9">
-            <div class="aspect__inner"><img src="https://github.com/asrenninger/tinkering/raw/master/viz/full.gif" obj.alt="obj.alt"/></div>
+            <div class="aspect__inner"><img src="https://github.com/asrenninger/networks/blob/master/viz/embeddings.gif?raw=true" obj.alt="obj.alt"/></div>
           </div>
           <div class="bottombar">
             <svg height="50" width="200">
-              <text x="0" y="30" fill="black" font-weight="bold">Election Studies</text>
+              <text x="0" y="30" fill="black" font-size="1vw" font-weight="bold">Embedding mobility</text>
             </svg>
-          </a>
           </div>
         </figure>
         <figure class="js-item column">
-          <a href="https://github.com/asrenninger/gisruk" target="_blank">
+          <a href="https://asrenninger.github.io/diversity/" target="_blank">
           <div class="aspect aspect--16x9">
-              <div class="aspect__inner"><img src="https://raw.githubusercontent.com/asrenninger/gisruk/master/viz/windows_cropped.gif" obj.alt="obj.alt"/></div>
+            <div class="aspect__inner"><img src="https://github.com/asrenninger/diversity/blob/main/viz/banner.gif?raw=true" obj.alt="obj.alt"/></div>
           </div>
           <div class="topbar">
             <svg height="50" width="200">
-              <text x="0" y="30" fill="black" font-weight="bold">Spatial Analysis</text>
+              <text x="0" y="30" fill="black" font-size="1vw" font-weight="bold">Atlas of Mixing</text>
             </svg>
-          </div>
           </a>
+          </div>
         </figure>
         <figure class="js-item column">
           <a href="https://asrenninger.github.io/exposure/" target="_blank">
@@ -100,7 +118,7 @@
           </div>
           <div class="bottombar">
             <svg height="50" width="200">
-              <text x="0" y="30" fill="black" font-weight="bold">Tracking Mobility</text>
+              <text x="0" y="30" fill="black" font-size="1vw" font-weight="bold">Tracking Mobility</text>
             </svg>
           </div>
           </a>
@@ -124,7 +142,7 @@
           </div>
           <div class="bottombar">
             <svg height="50" width="200">
-              <text x="0" y="30" fill="white" font-weight="bold">Mapping Heat Islands</text>
+              <text x="0" y="30" fill="white" font-size="1vw" font-weight="bold">Mapping Heat Islands</text>
             </svg>
           </div>
           </a>
@@ -143,7 +161,7 @@
           </div>
           <div class="topbar">
             <svg height="50" width="auto">
-              <text x="0" y="30" fill="white" font-weight="bold">Clustering urban form</text>
+              <text x="0" y="30" fill="white" font-size="1vw" font-weight="bold">Clustering urban form</text>
             </svg>
           </div>
         </a>
@@ -154,38 +172,42 @@
           </div>
         </figure>
         <figure class="js-item column row-span">
-          <div class="aspect aspect--9x80">
-            <div class="aspect__inner"><img src="https://raw.githubusercontent.com/asrenninger/urbansim/main/images/africaspint.png" obj.alt="obj.alt"/></div>
-          </div>
-        </figure>
-        <figure class="js-item column">
-          <a href="https://asrenninger.github.io/diversity/" target="_blank">
-          <div class="aspect aspect--16x9">
-            <div class="aspect__inner"><img src="https://github.com/asrenninger/diversity/blob/main/viz/banner.gif?raw=true" obj.alt="obj.alt"/></div>
-          </div>
-          <div class="topbar">
-            <svg height="50" width="200">
-              <text x="0" y="30" fill="black" font-weight="bold">Atlas of Mixing</text>
-            </svg>
-          </a>
-          </div>
-        </figure>
-        <figure class="js-item column">
-          <div class="aspect aspect--16x9">
-            <div class="aspect__inner"><img src="https://github.com/asrenninger/networks/blob/master/viz/embeddings.gif?raw=true" obj.alt="obj.alt"/></div>
-          </div>
-          <div class="bottombar">
-            <svg height="50" width="200">
-              <text x="0" y="30" fill="black" font-weight="bold">Embedding mobility</text>
-            </svg>
-          </div>
-        </figure>
+            <div class="aspect aspect--9x80">
+              <div class="aspect__inner"><img src="https://raw.githubusercontent.com/asrenninger/urbansim/main/images/africaspint.png" obj.alt="obj.alt"/></div>
+            </div>
+          </figure>
+          <figure class="js-item column">
+            <a href="https://github.com/asrenninger/gisruk" target="_blank">
+            <div class="aspect aspect--16x9">
+                <div class="aspect__inner"><img src="https://raw.githubusercontent.com/asrenninger/gisruk/master/viz/windows_cropped.gif" obj.alt="obj.alt"/></div>
+            </div>
+            <div class="topbar">
+              <svg height="50" width="200">
+                <text x="0" y="30" fill="black" font-size="1vw" font-weight="bold">Spatial Analysis</text>
+              </svg>
+            </div>
+            </a>
+          </figure>
+          <figure class="js-item column">
+            <a href="https://github.com/asrenninger/twentysixteen" target="_blank">
+            <div class="aspect aspect--16x9">
+              <div class="aspect__inner"><img src="https://github.com/asrenninger/tinkering/raw/master/viz/full.gif" obj.alt="obj.alt"/></div>
+            </div>
+            <div class="bottombar">
+              <svg height="50" width="200">
+                <text x="0" y="30" fill="black" font-size="1vw" font-weight="bold">Election Studies</text>
+              </svg>
+            </a>
+            </div>
+          </figure>
         <div class="column my-sizer-element"></div>
       </div>
     </div>
+</div>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Shuffle/5.2.3/shuffle.js" integrity="sha256-PQknYbVjgp04bi3N3TLE+6Tc1ZJJTk2jtzpdHWZFubI=" crossorigin="anonymous"></script>
 
     <script src="js/main.js"></script>
   </body>
+</html>
