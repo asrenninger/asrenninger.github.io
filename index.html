@@ -1,97 +1,118 @@
 <!DOCTYPE html>
 
 <html>
-  <head>
-    <meta charset="utf-8" />
-    <title>ASR</title>
 
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+<head>
+  <meta charset="utf-8" />
+  <title>ASR</title>
 
-    <link rel="stylesheet" href="css/style.css" />
-    <link rel="icon" type="image/png" href="https://raw.githubusercontent.com/asrenninger/asrenninger.github.io/master/images/fav.png" />
-  </head>
-  <body>
-    <div class="title">
-        <div class="top"><h1 style="margin-top: 0%; margin-bottom: 5%;">Andrew Renninger</h1></div>
-        <div class="bottom"><h4 style="margin-top: 0%; margin-bottom: 5%;">Urban Science + Human Behavior</h4></div>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="icon" type="image/png"
+    href="https://raw.githubusercontent.com/asrenninger/asrenninger.github.io/master/images/fav.png" />
+</head>
+
+<body>
+  <div class="title">
+    <div class="top">
+      <h1 style="margin-top: 0%; margin-bottom: 5%;">Andrew Renninger</h1>
     </div>
-    <div class="hero">
-        <div class="animation-wrapper">
-            <div class="animation-label">Mobility Networks</div>
-            <div class="animation">
-                <canvas id="networkCanvas"></canvas>
-            </div>
-        </div>
-        <div class="animation-wrapper">
-            <div class="animation-label">Urban Simulation</div>
-            <div class="animation">
-                <canvas id="gravityCanvas"></canvas>
-            </div>
-        </div>
-        <div class="animation-wrapper">
-            <div class="animation-label">Earth Observation</div>
-            <div class="animation">
-              <div id="globeCanvas"></div>
-          </div>
-        </div>
+    <div class="bottom">
+      <h4 style="margin-top: 0%; margin-bottom: 5%;">Urban Science + Human Behavior</h4>
     </div>
-    <div class="white-section">
+  </div>
+  <div class="hero">
+    <div class="animation-wrapper">
+      <div class="animation-label">Mobility Networks</div>
+      <div class="animation">
+        <canvas id="networkCanvas"></canvas>
+      </div>
+    </div>
+    <div class="animation-wrapper">
+      <div class="animation-label">Urban Simulation</div>
+      <div class="animation">
+        <canvas id="gravityCanvas"></canvas>
+      </div>
+    </div>
+    <div class="animation-wrapper">
+      <div class="animation-label">Earth Observation</div>
+      <div class="animation">
+        <div id="globeCanvas"></div>
+      </div>
+    </div>
+  </div>
+  <div class="white-section">
     <div class="container">
       <div class="js-grid my-shuffle">
         <figure class="js-item column">
           <a href="https://asrenninger.users.earthengine.app/view/dimensionsofdevelopment" target="_blank">
-          <div class="aspect aspect--16x9">
-              <div class="aspect__inner"><img src="https://raw.githubusercontent.com/asrenninger/tinkering/master/viz/earth.png" obj.alt="obj.alt"/></div>
-          </div>
-          <div class="topbar">
-            <svg height="50" width="auto">
-              <text x="0" y="30" fill="white" font-size="1vw" font-weight="bold">Indicators of Development</text>
-            </svg>
-          </div>
+            <div class="aspect aspect--16x9">
+              <div class="aspect__inner"><img
+                  src="https://raw.githubusercontent.com/asrenninger/tinkering/master/viz/earth.png"
+                  obj.alt="obj.alt" /></div>
+            </div>
+            <div class="topbar">
+              <svg height="50" width="auto">
+                <text x="0" y="30" fill="white" font-size="1vw" font-weight="bold">Indicators of Development</text>
+              </svg>
+            </div>
           </a>
         </figure>
         <figure class="js-item column">
           <div class="aspect aspect--16x9">
-            <div class="aspect__inner"><img src="https://raw.githubusercontent.com/asrenninger/tinkering/master/viz/bars.png" obj.alt="obj.alt"/></div>
+            <div class="aspect__inner"><img
+                src="https://raw.githubusercontent.com/asrenninger/tinkering/master/viz/bars.png" obj.alt="obj.alt" />
+            </div>
           </div>
         </figure>
         <figure class="js-item column col-span">
-          <a href="https://colab.research.google.com/drive/1VGxr21oRRZbB1Z2BPFYMJ975lpvzcUne?usp=sharing" target="_blank">
-          <div class="aspect aspect--32x9">
-              <div class="aspect__inner"><img src="https://raw.githubusercontent.com/asrenninger/sensing/master/viz/banner_two.png" obj.alt="obj.alt"/></div>
-          </div>
-          <div class="topbar">
-            <svg height="50" width="auto">
-              <text x="0" y="30" fill="white" font-size="1vw" font-weight="bold">Sensing Impervious Surface</text>
-            </svg>
-          </div>
+          <a href="https://colab.research.google.com/drive/1VGxr21oRRZbB1Z2BPFYMJ975lpvzcUne?usp=sharing"
+            target="_blank">
+            <div class="aspect aspect--32x9">
+              <div class="aspect__inner"><img
+                  src="https://raw.githubusercontent.com/asrenninger/sensing/master/viz/banner_two.png"
+                  obj.alt="obj.alt" /></div>
+            </div>
+            <div class="topbar">
+              <svg height="50" width="auto">
+                <text x="0" y="30" fill="white" font-size="1vw" font-weight="bold">Sensing Impervious Surface</text>
+              </svg>
+            </div>
           </a>
         </figure>
         <figure class="js-item column row-span">
           <div class="aspect aspect--9x80">
-            <div class="aspect__inner"><img src="https://raw.githubusercontent.com/asrenninger/tinkering/master/viz/europe_cropped.png" obj.alt="obj.alt"/></div>
+            <div class="aspect__inner"><img
+                src="https://raw.githubusercontent.com/asrenninger/tinkering/master/viz/europe_cropped.png"
+                obj.alt="obj.alt" /></div>
           </div>
         </figure>
         <figure class="js-item column">
           <a href="https://asrenninger.github.io/netsci/" target="_blank">
-          <div class="aspect aspect--16x9">
-            <div class="aspect__inner"><img src="https://github.com/asrenninger/philamonitor/raw/master/viz/logo.gif" obj.alt="obj.alt"/></div>
-          </div>
-          <div class="topbar">
-            <svg height="50" width="auto">
-              <text x="0" y="30" fill="white" font-size="1vw" font-weight="bold">Mobility Patterns</text>
-            </svg>
-          </div>
-        </a>
+            <div class="aspect aspect--16x9">
+              <div class="aspect__inner"><img src="https://github.com/asrenninger/philamonitor/raw/master/viz/logo.gif"
+                  obj.alt="obj.alt" /></div>
+            </div>
+            <div class="topbar">
+              <svg height="50" width="auto">
+                <text x="0" y="30" fill="white" font-size="1vw" font-weight="bold">Mobility Patterns</text>
+              </svg>
+            </div>
+          </a>
         </figure>
         <figure class="js-item column">
           <div class="aspect aspect--16x9">
-            <div class="aspect__inner"><img src="https://raw.githubusercontent.com/asrenninger/tinkering/master/viz/patents.png" obj.alt="obj.alt"/></div>
+            <div class="aspect__inner"><img
+                src="https://raw.githubusercontent.com/asrenninger/tinkering/master/viz/patents.png"
+                obj.alt="obj.alt" /></div>
           </div>
         </figure>
         <figure class="js-item column">
           <div class="aspect aspect--16x9">
-            <div class="aspect__inner"><img src="https://github.com/asrenninger/networks/blob/master/viz/embeddings.gif?raw=true" obj.alt="obj.alt"/></div>
+            <div class="aspect__inner"><img
+                src="https://github.com/asrenninger/networks/blob/master/viz/embeddings.gif?raw=true"
+                obj.alt="obj.alt" /></div>
           </div>
           <div class="bottombar">
             <svg height="50" width="200">
@@ -101,63 +122,73 @@
         </figure>
         <figure class="js-item column">
           <a href="https://asrenninger.github.io/diversity/" target="_blank">
-          <div class="aspect aspect--16x9">
-            <div class="aspect__inner"><img src="https://github.com/asrenninger/diversity/blob/main/viz/banner.gif?raw=true" obj.alt="obj.alt"/></div>
-          </div>
-          <div class="topbar">
-            <svg height="50" width="200">
-              <text x="0" y="30" fill="black" font-size="1vw" font-weight="bold">Atlas of Mixing</text>
-            </svg>
+            <div class="aspect aspect--16x9">
+              <div class="aspect__inner"><img
+                  src="https://github.com/asrenninger/diversity/blob/main/viz/banner.gif?raw=true" obj.alt="obj.alt" />
+              </div>
+            </div>
+            <div class="topbar">
+              <svg height="50" width="200">
+                <text x="0" y="30" fill="black" font-size="1vw" font-weight="bold">Atlas of Mixing</text>
+              </svg>
           </a>
-          </div>
-        </figure>
-        <figure class="js-item column">
-          <a href="https://asrenninger.github.io/exposure/" target="_blank">
+      </div>
+      </figure>
+      <figure class="js-item column">
+        <a href="https://asrenninger.github.io/exposure/" target="_blank">
           <div class="aspect aspect--16x9">
-              <div class="aspect__inner"><img src="https://raw.githubusercontent.com/asrenninger/tinkering/master/viz/trimmed.gif" obj.alt="obj.alt"/></div>
+            <div class="aspect__inner"><img
+                src="https://raw.githubusercontent.com/asrenninger/tinkering/master/viz/trimmed.gif"
+                obj.alt="obj.alt" /></div>
           </div>
           <div class="bottombar">
             <svg height="50" width="200">
               <text x="0" y="30" fill="black" font-size="1vw" font-weight="bold">Tracking Mobility</text>
             </svg>
           </div>
-          </a>
-        </figure>
-        <figure class="js-item column">
-          <div class="aspect aspect--16x9">
-            <div class="aspect__inner"><img src="https://raw.githubusercontent.com/asrenninger/networks/master/viz/tween.png" obj.alt="obj.alt"/></div>
+        </a>
+      </figure>
+      <figure class="js-item column">
+        <div class="aspect aspect--16x9">
+          <div class="aspect__inner"><img
+              src="https://raw.githubusercontent.com/asrenninger/networks/master/viz/tween.png" obj.alt="obj.alt" />
           </div>
-          <!--
+        </div>
+        <!--
           <div class="bottombar">
             <svg height="50" width="200">
               <text x="0" y="30" fill="white" font-weight="bold">Network Analysis</text>
             </svg>
           </div>
           -->
-        </figure>
-        <figure class="js-item column">
-          <a href="https://asrenninger.github.io/heat/" target="_blank">
+      </figure>
+      <figure class="js-item column">
+        <a href="https://asrenninger.github.io/heat/" target="_blank">
           <div class="aspect aspect--16x9">
-              <div class="aspect__inner"><img src="https://raw.githubusercontent.com/asrenninger/tinkering/master/viz/temp.gif" obj.alt="obj.alt"/></div>
+            <div class="aspect__inner"><img
+                src="https://raw.githubusercontent.com/asrenninger/tinkering/master/viz/temp.gif" obj.alt="obj.alt" />
+            </div>
           </div>
           <div class="bottombar">
             <svg height="50" width="200">
               <text x="0" y="30" fill="white" font-size="1vw" font-weight="bold">Mapping Heat Islands</text>
             </svg>
           </div>
-          </a>
-        </figure>
-        <!--
+        </a>
+      </figure>
+      <!--
         <figure class="js-item column">
           <div class="aspect aspect--16x9">
             <div class="aspect__inner"><img src="https://raw.githubusercontent.com/asrenninger/tinkering/master/viz/speed_gla.png" obj.alt="obj.alt"/></div>
           </div>
         </figure>
         -->
-        <figure class="js-item column">
-          <a href="https://asrenninger.github.io/simcity/" target="_blank">
+      <figure class="js-item column">
+        <a href="https://asrenninger.github.io/simcity/" target="_blank">
           <div class="aspect aspect--16x9">
-            <div class="aspect__inner"><img src="https://raw.githubusercontent.com/asrenninger/wrangling/master/viz/morphology-logo.gif" obj.alt="obj.alt"/></div>
+            <div class="aspect__inner"><img
+                src="https://raw.githubusercontent.com/asrenninger/wrangling/master/viz/morphology-logo.gif"
+                obj.alt="obj.alt" /></div>
           </div>
           <div class="topbar">
             <svg height="50" width="auto">
@@ -165,49 +196,75 @@
             </svg>
           </div>
         </a>
-        </figure>
-        <figure class="js-item column">
+      </figure>
+      <figure class="js-item column">
+        <div class="aspect aspect--16x9">
+          <div class="aspect__inner"><img src="https://github.com/asrenninger/tinkering/raw/master/viz/commutes.png"
+              obj.alt="obj.alt" /></div>
+        </div>
+      </figure>
+      <figure class="js-item column row-span">
+        <div class="aspect aspect--9x80">
+          <div class="aspect__inner"><img
+              src="https://raw.githubusercontent.com/asrenninger/urbansim/main/images/africaspint.png"
+              obj.alt="obj.alt" /></div>
+        </div>
+      </figure>
+      <figure class="js-item column">
+        <a href="https://github.com/asrenninger/gisruk" target="_blank">
           <div class="aspect aspect--16x9">
-            <div class="aspect__inner"><img src="https://github.com/asrenninger/tinkering/raw/master/viz/commutes.png" obj.alt="obj.alt"/></div>
+            <div class="aspect__inner"><img
+                src="https://raw.githubusercontent.com/asrenninger/gisruk/master/viz/windows_cropped.gif"
+                obj.alt="obj.alt" /></div>
           </div>
-        </figure>
-        <figure class="js-item column row-span">
-            <div class="aspect aspect--9x80">
-              <div class="aspect__inner"><img src="https://raw.githubusercontent.com/asrenninger/urbansim/main/images/africaspint.png" obj.alt="obj.alt"/></div>
-            </div>
-          </figure>
-          <figure class="js-item column">
-            <a href="https://github.com/asrenninger/gisruk" target="_blank">
-            <div class="aspect aspect--16x9">
-                <div class="aspect__inner"><img src="https://raw.githubusercontent.com/asrenninger/gisruk/master/viz/windows_cropped.gif" obj.alt="obj.alt"/></div>
-            </div>
-            <div class="topbar">
-              <svg height="50" width="200">
-                <text x="0" y="30" fill="black" font-size="1vw" font-weight="bold">Spatial Analysis</text>
-              </svg>
-            </div>
-            </a>
-          </figure>
-          <figure class="js-item column">
-            <a href="https://github.com/asrenninger/twentysixteen" target="_blank">
-            <div class="aspect aspect--16x9">
-              <div class="aspect__inner"><img src="https://github.com/asrenninger/tinkering/raw/master/viz/full.gif" obj.alt="obj.alt"/></div>
-            </div>
-            <div class="bottombar">
-              <svg height="50" width="200">
-                <text x="0" y="30" fill="black" font-size="1vw" font-weight="bold">Election Studies</text>
-              </svg>
-            </a>
-            </div>
-          </figure>
-        <div class="column my-sizer-element"></div>
-      </div>
+          <div class="topbar">
+            <svg height="50" width="200">
+              <text x="0" y="30" fill="black" font-size="1vw" font-weight="bold">Spatial Analysis</text>
+            </svg>
+          </div>
+        </a>
+      </figure>
+      <figure class="js-item column">
+        <a href="https://github.com/asrenninger/twentysixteen" target="_blank">
+          <div class="aspect aspect--16x9">
+            <div class="aspect__inner"><img src="https://github.com/asrenninger/tinkering/raw/master/viz/full.gif"
+                obj.alt="obj.alt" /></div>
+          </div>
+          <div class="bottombar">
+            <svg height="50" width="200">
+              <text x="0" y="30" fill="black" font-size="1vw" font-weight="bold">Election Studies</text>
+            </svg>
+        </a>
     </div>
-</div>
+    </figure>
+    <figure class="js-item column" id="flickr-tile">
+      <a href="https://www.flickr.com/photos/199675373@N07/" target="_blank">
+        <div class="aspect aspect--16x9">
+          <div class="aspect__inner">
+            <img id="flickr-slideshow"
+              src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNk+A8AAQUBAScY42YAAAAASUVORK5CYII="
+              alt="Flickr Slideshow"
+              style="background-color: black; object-fit: cover; width: 100%; height: 100%; transition: opacity 2s ease-in-out;" />
+          </div>
+        </div>
+        <div class="bottombar">
+          <svg height="50" width="200">
+            <text x="0" y="30" fill="white" font-size="1vw" font-weight="bold">Photography</text>
+          </svg>
+        </div>
+      </a>
+    </figure>
+    <div class="column my-sizer-element"></div>
+  </div>
+  </div>
+  </div>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/Shuffle/5.2.3/shuffle.js" integrity="sha256-PQknYbVjgp04bi3N3TLE+6Tc1ZJJTk2jtzpdHWZFubI=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"
+    integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Shuffle/5.2.3/shuffle.js"
+    integrity="sha256-PQknYbVjgp04bi3N3TLE+6Tc1ZJJTk2jtzpdHWZFubI=" crossorigin="anonymous"></script>
 
-    <script src="js/main.js"></script>
-  </body>
+  <script src="js/main.js"></script>
+</body>
+
 </html>
